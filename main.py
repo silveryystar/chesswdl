@@ -1,12 +1,9 @@
 from f import config, get_game, get_analysis, get_plots
 
-# TODO: Future work: depth-node relation
-
 exe = "stockfish-windows-x86-64-avx2.exe"
-#exe = "lc0.exe"
+# exe = "lc0.exe"
 
-game = "Ge"
-# game = input("Game: ")
+game = input("Game: ")
 
 moves, board = get_game(game)
 engine, limit, key, value = config(exe)
